@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: center;
+    font-family: helvetica;
+}
+h1 {
+    text-align: center;
+    color: black;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border: 5px;
+}
+.add-task-btn {
+    background: rgb(91, 91, 227);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+form {
+    display: flex;
+    
+}
+.filter-buttons {
+    margin-top: 10px;
+    gap: 10px;
+}
+.filter-buttons button {
+    padding: 10px;
+    border: none;
+    background: gray;
+    color: black;
+    border-radius: 5px;
+}
+.filter-buttons .completed {
+    background: blue;
+    color: white;
+}
+
+.task-list {
+    background: white;
+    margin-top: 20px;
+}
+.task-list button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.task-list li {
+    list-style: none;
+    padding: 10px;
+}
+.task-list .homework {
+    background: rgb(221, 205, 205);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.task-list .code {
+    background: rgb(221, 205, 205);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-decoration: line-through;
+    color: gray;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.task-list .swim {
+    background: rgb(221, 205, 205);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
