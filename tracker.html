@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracker UI</title>
-    <link rel="stylesheet" href="tracker.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Task Manager UI</title>
+<link rel="stylesheet" href="tracker.css">
 </head>
 <body>
-    <H1>Student's Task Manager</H1>
-    <form>
-        <input type="text" placeholder="Add new Task">
-        <button class="add-task-btn">Add</button>
-    </form>
-        <div class="filter-buttons">
-            <button class="completed">All</button>
-            <button>Pending</button>
-            <button>Completed</button>
-        </div>
-        <div class="Task-list">
-            <ul class="task-list">
-                <li class="homework">
-                    <input type="checkbox">
-                    <span>Finish math homework</span>
-                    <button>
-                        tick
-                    </button>
-                    <button>
-                        X
-                    </button>
-                </li>
-                <li class="code">
-                    <input type="checkbox">
-                    <span>Do some coding</span>
-                    <button>
-                        tick
-                    </button>
-                    <button>
-                        X
-                    </button>
-                </li>
-                <li class="swim">
-                    <input type="checkbox">
-                    <span>Go swimming</span>
-                    <button>
-                        tick
-                    </button>
-                    <button>
-                        X
-                    </button>
-                </li>
-            </ul>
-        </div>
-    
+
+<h1>Student Task Manager</h1>
+
+<form>
+  <input type="text" placeholder="Add a new task..." />
+  <button class="add-btn" type="submit">Add</button>
+</form>
+<div class="filters">
+  <button class="active">All</button>
+  <button>Pending</button>
+  <button>Completed</button>
+</div>
+<ul class="task-list">
+  <li>
+    <input type="checkbox" />
+    <span class="task-text">Finish math homework</span>
+    <div class="actions">
+      <button class="complete-btn" title="Mark as Complete">✓</button>
+      <button class="delete-btn" title="Delete Task">✖</button>
+    </div>
+  </li>
+  <li class="completed">
+    <input type="checkbox" checked />
+    <span class="task-text">Do some coding</span>
+    <div class="actions">
+      <button class="complete-btn" title="Mark as Complete">✓</button>
+      <button class="delete-btn" title="Delete Task">✖</button>
+    </div>
+  </li>
+  <li>
+    <input type="checkbox" />
+    <span class="task-text">Go swimming</span>
+    <div class="actions">
+      <button class="complete-btn" title="Mark as Complete">✓</button>
+      <button class="delete-btn" title="Delete Task">✖</button>
+    </div>
+  </li>
+</ul>
 </body>
 </html>
