@@ -1,12 +1,16 @@
 const form = document.querySelector('form')
 const taskInput = document.getElementById("teskentry")
 const taskList = document.querySelector(".task-list")
+const error = document.getElementById("error")
 
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
+        const realTask = taskInput.value.trim()
 
-    const realTask = taskInput.value.trim()
+    if(realTask === "") {
+        error.textContent = "Cannot be empty"
+    }
 
     if(realTask) {
         const newTask = document.createElement("li")
@@ -32,9 +36,10 @@ taskList.addEventListener("click", (e) => {
 
     if(e.target.classList.contains('delete-btn')) {
         li.remove()
-    } else if(e.target.classList.contains('complete-btn' || e.target.type === 'checkbox')) {
+    } else if(e.target.classList.contains('complete-btn') || e.target.type === 'checkbox') {
         li.classList.toggle('completed')
-        
+    const checkbox = li.querySelector('input[type="checkbox"')
+    checkbox.checked = !checkbox.checked
     }
 })
  

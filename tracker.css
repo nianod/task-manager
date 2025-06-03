@@ -85,3 +85,7 @@
   .actions button.delete-btn {
     color: #ef4444;
   }
+  #error {
+    color: red;
+    text-align: center;
+  }
