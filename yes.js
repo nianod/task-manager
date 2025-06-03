@@ -33,7 +33,8 @@ taskList.addEventListener("click", (e) => {
     if(e.target.classList.contains('delete-btn')) {
         li.remove()
     } else if(e.target.classList.contains('complete-btn' || e.target.type === 'checkbox')) {
-        //li.classList.toggle('completed')
+        li.classList.toggle('completed')
+        
     }
 })
  
